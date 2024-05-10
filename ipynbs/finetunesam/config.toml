@@ -1,0 +1,21 @@
+[data]
+train = "../cell_data/standardmicroscopy/04cur_data/train"
+test = "../cell_data/standardmicroscopy/04cur_data/test/"
+annot = "annotations.json"
+
+[args]
+validate = true
+eval = true
+use_cuda = false
+train = true
+run_id = 01_SM
+
+[model]
+batch_size = 1
+epochs = 100
+lr = 0.001
+weight_decay = 0.0005
+
+[loss]
+alpha = 0.8
+gamma = 2
